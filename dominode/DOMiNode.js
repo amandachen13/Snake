@@ -73,9 +73,9 @@
 const DOMNodeCollection = __webpack_require__(1);
 
 function $l (arg) {
-  if (arg instanceof HTMLElement) {
+  if (arg instanceof HTMLElement || arg === window) {
     return new DOMNodeCollection([arg]);
-  } else if ( typeof arg === 'string'){
+  } else if (typeof arg === 'string'){
     const elements = Array.from(document.querySelectorAll(arg));
     return new DOMNodeCollection(elements);
   } else if (arg instanceof Function) {
@@ -138,6 +138,10 @@ const DOMNodeCollection = function (HTMLElements) {
 DOMNodeCollection.prototype.each = function (callback) {
   this.HTMLElements.forEach ( el => callback(el) );
   return this;
+};
+
+DOMNodeCollection.prototype.select = function (i) {
+  return new DOMNodeCollection([this.HTMLElements[i]]);
 };
 
 DOMNodeCollection.prototype.html = function(innerHTML) {

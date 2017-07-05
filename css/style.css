@@ -1,26 +1,46 @@
-
-.visited {
-  text-decoration: line-through;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-.photo-form-container {
-  display: block;
+h1 {
+  margin: 0 auto;
+  font-family: 'Fredoka One', cursive;
+  font-size: 36px;
+  padding: 20px;
 }
 
-.hidden {
-  display: none;
+.snake-game {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid gray;
 }
 
-.dog-photos {
-  list-style: none;
+.footer {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.dog-photos li {
-  display: inline;
+.footer > li > a {
+  font-size: 24px;
+  color: gray;
 }
 
-.dog-photos li img {
-  height: 200px;
-  width: auto;
-  padding: 3px;
+.fa:hover {
+  color: lightgrey;
+  cursor: pointer;
+}
+
+li {
+  padding: 10px;
+}
+
+.snake {
+  background: lightgreen;
+}
+
+.apple {
+  background: salmon;
+  border-radius: 50%;
 }
