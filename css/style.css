@@ -7,7 +7,16 @@ h1 {
   margin: 0 auto;
   font-family: 'Fredoka One', cursive;
   font-size: 36px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  color: #00805e;
+}
+
+.score {
+  margin: 0 auto 5px auto;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: grey;
 }
 
 .snake-game {
@@ -28,7 +37,7 @@ h1 {
 }
 
 .fa:hover {
-  color: lightgrey;
+  color: #00805e;;
   cursor: pointer;
 }
 
@@ -37,7 +46,7 @@ li {
 }
 
 .snake {
-  background: lightgreen;
+  background: #00cc96;
 }
 
 .apple {
