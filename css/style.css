@@ -51,7 +51,11 @@ li {
 
 .apple {
   background: salmon;
+<<<<<<< HEAD
   background: url(../assets/images/peach.png) no-repeat center;
   background-size: contain;
   /*border-radius: 50%;*/
+=======
+  border-radius: 50%;
+>>>>>>> 59db11007579b72afb4f9b284e800025a90289b9
 }
