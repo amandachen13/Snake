@@ -1,6 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
+  /*background: url(../assets/images/snake.png)*/
 }
 
 h1 {
@@ -10,6 +11,7 @@ h1 {
   padding-top: 20px;
   padding-bottom: 15px;
   color: #00805e;
+  /*color: #0f712b;*/
 }
 
 .score {
@@ -47,15 +49,12 @@ li {
 
 .snake {
   background: #00cc96;
+  /*background: #1bcf53;*/
 }
 
 .apple {
   background: salmon;
-<<<<<<< HEAD
   background: url(../assets/images/peach.png) no-repeat center;
   background-size: contain;
   /*border-radius: 50%;*/
-=======
-  border-radius: 50%;
->>>>>>> 59db11007579b72afb4f9b284e800025a90289b9
 }
