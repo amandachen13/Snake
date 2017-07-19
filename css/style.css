@@ -9,9 +9,15 @@ h1 {
   font-family: 'Fredoka One', cursive;
   font-size: 36px;
   padding-top: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   color: #00805e;
   /*color: #0f712b;*/
+}
+
+.replay {
+  margin: 0 auto;
+  font-size: 18px;
+  color: gray;
 }
 
 .score {
@@ -43,12 +49,21 @@ h1 {
   cursor: pointer;
 }
 
+.fa-rotate-left:hover {
+  color: #e6b39b;
+}
+
 li {
   padding: 10px;
 }
 
 .snake {
+  /*border-radius: 8px;*/
   background: #00cc96;
+  background: -webkit-radial-gradient(#e6b39b, #00cc96, #00805e); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#e6b39b, #00cc96, #00805e); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#e6b39b, #00cc96, #00805e); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#e6b39b, #00cc96, #00805e); /* Standard syntax */
   /*background: #1bcf53;*/
 }
 
